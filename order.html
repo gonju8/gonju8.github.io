@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="order.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      var sum = 3500;
+      function calc(cBox) {
+        if(cBox.checked){
+          sum += parseInt(cBox.value);
+        }
+        else{
+          sum -= parseInt(cBox.value);
+        }
+        document.getElementById("subtext").value = sum;
+      }
+
+      $(document).ready(function(){
+        $('#coffee').click(function(){
+          $('.slide').slideToggle(2000);
+        });
+      });
+      $(document).ready(function(){
+        $('#tea').click(function(){
+          $('.slide').slideToggle(2000);
+        });
+      });
+      $(document).ready(function(){
+        $('#smodi').click(function(){
+          $('.slide').slideToggle(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.png"></a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">BOARD</a></li>
+        <li><a href="#">JQUERY</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="#">JOIN</a></li>
+      </ul>
+   </nav>
+
+   <aside>
+     <img src="img/americano.jpg" width="400" height="600">
+   </aside>
+
+   <section>
+    <form>
+     <span class="subt"> ORDER </span> <br>
+     <span>HOT</span> <input type="checkbox" name="hot">
+     <span>ICE</span> <input type="checkbox" name="ice">
+     <span>샷 추가 (+무료) </span><input type="checkbox">
+     <span>연하게 (+무료)</span> <input type="checkbox">
+     <span>바닐라 시럽 추가 (+500)</span> <input type="checkbox" name="shot" value='500' onclick="calc(this)">
+     <span>L 사이즈 업 (+800)</span> <input type="checkbox" name="sizeup" value="800" onclick="calc(this)">
+     <hr>
+     <span class="subt"> TOPPINGS</span> <br>
+     <span>밀크폼 추가 (+500)</span> <input type="checkbox" name="milk" value='500' onclick="calc(this)">
+     <span>펄 추가 (+500)</span> <input type="checkbox" name="pul" value='500' onclick="calc(this)">
+     <span>코코넛 추가 (+500)</span> <input type="checkbox" name="coconut" value='500' onclick="calc(this)">
+     <span>알로에 추가 (+500)</span> <input type="checkbox" name="alioe" value='500' onclick="calc(this)">
+     <span>화이트 펄 추가 (+500)</span> <input type="checkbox" name="whitepul" value='500' onclick="calc(this)">
+     <hr>
+     <span class="subt"> ICE</span> <br>
+     <span>LESS (30%)</span> <input type="checkbox" name="shot">
+     <span>REGULAR (60%)</span> <input type="checkbox" name="shot">
+     <span>FULL (100%)</span> <input type="checkbox" name="shot">
+     <hr>
+     <span class="subt">총 금액</span> <input type="text" id="subtext" value="3500">
+   </form>
+  </section>
+
+  <hr>
+
+  <article>
+    <span>그 외에 다른 상품 보기<span>
+    <form>
+     <input type="button" id="coffee" value="커피류">
+     <input type="button" id="tea" value="티">
+     <input type="button" id="smodi" value="스무디">
+   </form>
+   <div class="slide">
+     <img src="img/cafelatte.jpg">
+   </div>
+   <div class="slide">
+     <img src="img/remon.jpg">
+   </div>
+   <div class="slide">
+     <img src="img/mango.jpg">
+   </div>
+  </article>
+ </body>
+</html>

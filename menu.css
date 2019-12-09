@@ -1,0 +1,43 @@
+body{
+  width: 1900px;
+}
+header{
+  text-align: center;
+}
+header img{
+  width: 340px;
+  height: 340px;
+  margin: -110px 0px 0px -30px;
+}
+nav{
+  margin: -125px 0px 0px 0px;
+}
+nav ul{
+  list-style: none;
+  text-align: center;
+  border-top: 2px solid #7E2929;
+  border-bottom: 2px solid #7E2929;
+  padding: 20px 0px;
+}
+nav ul li{
+  display: inline;
+  padding-right: 130px;
+  font: bold normal 25px 맑은고딕;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: #BE1616;
+}
+
+
+aside{
+  text-align: center;
+}
+aside img{
+  padding-right: 100px;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      function login(){
+        var log = document.getElementById("log");
+        if($("#id").val() == ''){
+          alert('ID를 입력해주세요.');
+          return false;
+        }
+        if($("#pw").val() == ''){
+          alert('PW를 입력해주세요.');
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="logo.png"></a>
+    </header>
+
+
+
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="#">BOARD</a></li>
+        <li><a href="#">JQUERY</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="#">JOIN</a></li>
+      </ul>
+    </nav>
+
+
+    <aside>
+      <span>ID</span> <input id="id" type="text" name="id">
+      <div><span>PW</span> <input id="pw" type="password" name="pw"></div>
+      <input type="button" id="log" value="LOGIN" onclick="login()">
+    </aside>
+  </body>
+</html>

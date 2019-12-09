@@ -1,0 +1,104 @@
+body{
+  width: 1900px;
+}
+header{
+  text-align: center;
+}
+header img{
+  width: 340px;
+  height: 340px;
+  margin: -110px 0px 0px -30px;
+}
+nav{
+  margin: -125px 0px 0px 0px;
+}
+nav ul{
+  list-style: none;
+  text-align: center;
+  border-top: 2px solid #7E2929;
+  border-bottom: 2px solid #7E2929;
+  padding: 20px 0px;
+}
+nav ul li{
+  display: inline;
+  padding-right: 130px;
+  font: bold normal 25px 맑은고딕;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color: #BE1616;
+}
+
+aside{
+  display: inline-block;
+}
+aside img{
+  padding-left: 450px;
+  margin-top: 100px;
+}
+
+
+section{
+  float: right;
+  padding-right: 450px;
+  margin-top: 50px;
+}
+section input{
+  display: block;
+  margin-left: 250px;
+  margin-top: -17px;
+}
+section span{
+  font: normal normal 20px 맑은고딕;
+  display: inline-block;
+  padding-top: 10px;
+}
+.subt{
+  font: bold normal 30px 맑은고딕;
+  padding-bottom: 15px;
+  color: #7E2929;
+}
+#subtext{
+  width: 100px;
+  border: none;
+  font: bold normal 25px 맑은고딕;
+  padding-top: -100px;
+}
+section hr{
+  width: 350px;
+}
+
+
+body > hr{
+  margin-top: 225px;
+}
+
+
+article{
+  clear: both;
+  padding-top: 30px;
+  padding-left: 350px;
+}
+article span{
+  text-align: center;
+  font: bold normal 30px 맑은고딕;
+  margin-left: 90px;
+}
+article input{
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin-right: 300px;
+  margin-top: 30px;
+}
+.slide{
+  display: inline-block;
+}
+.slide img{
+  margin-left: 60px;
+  padding-right: 130px;
+}
